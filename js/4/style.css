@@ -1,0 +1,118 @@
+/* 全局 */
+body {
+  font-family: "Inter", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: linear-gradient(130deg, #eae8ff, #f5f8ff);
+  margin: 0;
+  padding: 40px 12px;
+  display: flex;
+  justify-content: center;
+}
+
+/* JSON 高亮 */
+.json-key      { color: #7a6ff0; }
+.json-string   { color: #2a9d8f; }
+.json-number   { color: #e76f51; }
+.json-boolean  { color: #457b9d; }
+.json-null     { color: #999; }
+.json-error    { color: #e63946; font-weight: bold; }
+
+/* 渐显动画 */
+#result.fade {
+  animation: fadeIn .25s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+/* 主容器 */
+.app {
+  width: 100%;
+  max-width: 560px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 32px 36px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  animation: fadeIn .35s ease;
+}
+
+/* 标题 */
+h1 {
+  text-align: center;
+  margin-bottom: 28px;
+  font-size: 26px;
+  color: #333;
+}
+
+/* ---- 表单区 ---- */
+.group {
+  margin-bottom: 26px;
+  padding: 18px 20px;
+  background: #fafaff;
+  border-radius: 14px;
+  border: 1px solid #e7e7ff;
+}
+
+/* 输入表单横向排列（自动换行） */
+.group-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* 输入框 */
+input {
+  flex: 1;
+  min-width: 120px;
+  padding: 10px 12px;
+  border: 1px solid #dcdcee;
+  border-radius: 8px;
+  transition: all .25s ease;
+  outline: none;
+}
+
+input:focus {
+  border-color: #7b6ff6;
+  box-shadow: 0 0 0 3px rgba(123,111,246,0.2);
+}
+
+/* ---- 按钮 ---- */
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #7a6ff0;
+  color: #fff;
+  cursor: pointer;
+  transition: all .25s ease;
+}
+
+button:hover {
+  background: #5e52e5;
+  box-shadow: 0 4px 10px rgba(122,111,240,0.25);
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(.97);
+}
+
+/* ---- 输出结果 ---- */
+.result {
+  margin-top: 24px;
+  background: #f7f8ff;
+  padding: 16px 18px;
+  border-radius: 12px;
+  border: 1px solid #e2e3f3;
+  white-space: pre-wrap;
+  min-height: 50px;
+  font-size: 15px;
+  color: #444;
+  animation: fadeIn .3s ease;
+}
+
+/* 动画 */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(12px);}
+  to {opacity: 1; transform: translateY(0);}
+}

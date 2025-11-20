@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>成绩统计系统</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <h1>成绩统计系统</h1>
+
+      <!-- 学生输入区 -->
+      <div class="group">
+        <div class="group-row">
+          <input id="name" placeholder="姓名" />
+          <input id="math" type="number" placeholder="数学" />
+          <input id="english" type="number" placeholder="英语" />
+          <button id="add">添加学生</button>
+        </div>
+      </div>
+
+      <!-- 功能区 -->
+      <div class="group">
+        <div class="group-row">
+          <button id="show-math-avg">显示数学平均分</button>
+          <button id="show-eng-avg">显示英语平均分</button>
+          <button id="show-eng-rank">英语成绩排名</button>
+          <input id="search" placeholder="搜索学生..." />
+        </div>
+      </div>
+
+      <!-- 输出区 -->
+      <div id="result" class="result"></div>
+    </div>
+
+    <script src="render.js"></script>
+    <script src="solve.js"></script>
+    <script src="logic.js"></script>
+  </body>
+</html>
