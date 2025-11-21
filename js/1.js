@@ -1,9 +1,9 @@
 /**
- * @param {number} n
- * @return {number}
+ * 将多层嵌套数组转换为一维数组
+ * @param {any[]} arr 
+ * @returns {any[]}
  */
-var climbStairs = function(n) {
-    
-};
-console.log(climbStairs(2)===2)
-console.log(climbStairs(3)===3)
+function flatten(arr) {
+  
+}
+console.log(flatten([[1,2,3,4],[1,[1,[1]]]])==[1,2,3,4,1,1,1])
